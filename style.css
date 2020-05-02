@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+:root {
+    --orangeRed: #EC4E20;
+    --orange: #FF9505;
+    --blue: #016FB9;
+    --gray: #353531; /* rgb(53, 53, 49) */
+    --lightGray: #eee;
+    --white: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: var(--gray);
+}
+.py-5 {
+    padding: 120px 0 !important;
+}
+/************************
+navbar
+************************/
+.navbar {
+    background: rgba(53, 53, 49, .9) !important;
+}
+.navbar-brand {
+    color: var(--orange) !important;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.navbar-brand:hover {
+    color: var(--orangeRed) !important;
+    transition: .4s ease;
+}
+.navbar .navbar-nav .nav-link {
+    color: var(--white) !important;
+    text-transform: uppercase;
+    padding-left: 30px;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--orange) !important;
+    transition: .4s ease;
+}
+.navbar-toggler {
+    background-color: var(--orange);
+}
+/************************
+header
+************************/
+.header {
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 !important;
+    padding: 200px 50px;
+    margin-bottom: 0;
+}
+.btn-primary {
+    background: var(--orange);
+}
+.btn-primary:hover {
+    background: var(--orangeRed);
+}
+/************************
+intro
+************************/
+h2::after {
+    content: "";
+    display: block;
+    margin: 30px auto;
+    width: 100px;
+    height: 5px;
+    background: var(--orange);
+}
+/************************
+numbers
+************************/
+#numbers {
+    background: var(--gray);
+    color: var(--white);
+    text-align: center;
+}
+#numbers i {
+    color: var(--orange);
+    font-size: 5rem;
+    margin-bottom: 30px;
+}
+#numbers hgroup h3 {
+    color: var(--lightGray);
+    font-size: 2.2rem;
+}
+#numbers hgroup h4 {
+    color: var(--orange);
+    font-size: 1.2rem;
+}
+/************************
+portfolio
+************************/
+.portfolio .card {
+    position: relative;
+    margin-bottom: 2em;
+}
+.portfolio .card-text {
+    padding: 30px;
+}
+.portfolio .corner-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--orange);
+    color: var(--white);
+}
+.portfolio .corner-text p {
+    margin-bottom: 0;
+    padding: 10px;
+    font-weight: 600;
+}
+.portfolio img {
+    transition: transform 3s ease-in-out;
+}
+.portfolio .holder {
+    overflow: hidden;  /* da ne bi izasla slika iz kontejnera */
+}
+.portfolio img:hover {
+    transform: scale(1.3);
+}
+/************************
+projects
+************************/
+.projects {
+    background: var(--lightGray);
+}
+.projects img {
+    border-radius: 
+}
+/************************
+team
+************************/
+.team {
+    text-align: center;
+}
+.team img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+/***** footer *****/
+footer {
+    background: var(--orange);
+}
+footer a {
+    color: var(--gray);
+    font-size: 2.5em;
+    margin: 10px;
+}
+footer a:hover {
+    color: white;
+    transition-duration: 0.7s;
+}
+
+footer i:hover {
+    animation: footer 0.7s ease;
+}
+footer h3 {
+    margin-top: 30px;
+}
+@keyframes footer {
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+footer h2::after {
+    content: "";
+    display: block;
+    margin: 30px auto;
+    width: 100px;
+    height: 5px;
+    background: var(--gray);
+}
+
+/************************
+R E S P O N S I V E
+************************/
+@media(max-width: 768px) {
+    .header {
+        padding: 150px 20px;
+    }
+    .header h1 {
+        font-size: 3rem;
+        margin-bottom: 20px
+    }
+    h2 {
+        font-size: 3rem !important;
+    }
+}
+
+
+
